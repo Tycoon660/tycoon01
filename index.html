@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tycoon.01 - IT & Tech Influencer</title>
+    <meta name="description" content="Tycoon.01 is an IT & tech influencer sharing knowledge on cybersecurity, coding, networking, and digital innovation. Explore his works, tutorials, and collaborations.">
+    <meta name="keywords" content="tycoon.01, tech influencer Ghana, IT influencer, cybersecurity coach, programming mentor, digital innovation, tech ambassador">
+    
+    <!-- Social Sharing -->
+<meta property="og:title" content="Tycoon.01 - IT & Tech Influencer">
+<meta property="og:description" content="Learn IT, cybersecurity, coding and digital strategy with Tycoon.01">
+<meta property="og:image" content="https://example.com/profile.jpg">
+<meta property="og:type" content="website">
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Tycoon.01",
+        "jobTitle": "IT & Tech Influencer",
+        "url": "https://tycoon01.com",
+        "sameAs": [
+            "https://www.instagram.com/_tycoon.01?igsh=MXF2NHllYXhubjFzYw==",
+            "https://www.youtube.com/@tycoon01",
+            "https://www.tiktok.com/@tycoon.01"
+        ]
+    }
+</script>
+
+    <style>
+    :root {
+        --primary: #00b8ff;
+        --bg-dark: #0a0f1a;
+        --bg-gradient: linear-gradient(135deg, #0a0f1a 0%, #111b2b 100%);
+        --text-light: #f2f2f2;
+        --card-bg: rgba(255,255,255,0.05);
+    }
+
+    body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: var(--bg-gradient);
+        color: var(--text-light);
+        overflow-x: hidden;
+    }
+
+    header {
+        text-align: center;
+        padding: 35px 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+        background: rgba(0,0,0,0.2);
+        backdrop-filter: blur(8px);
+    }
+    header h1 {
+        color: var(--primary);
+        font-size: 2.2rem;
+        margin: 0;
+    }
+    header p {
+        font-size: 1rem;
+        opacity: 0.8;
+        margin-top: 8px;
+    }
+
+    /* Hero */
+    .hero {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 60px 5% 5%;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero img {
+        width: 320px;
+        border-radius: 15px;
+        border: 3px solid var(--primary);
+        margin-right: 40px;
+        box-shadow: 0 0 25px rgba(0,184,255,0.3);
+        transition: 0.3s;
+    }
+    .hero img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 35px rgba(0,184,255,0.45);
+    }
+    .hero-text {
+        max-width: 520px;
+    }
+    .hero-text h2 {
+        color: var(--primary);
+        font-size: 2rem;
+    }
+    .hero-text p {
+        line-height: 1.8;
+        opacity: 0.9;
+        font-size: 1.05rem;
+    }
+    .cta-btn {
+        display: inline-block;
+        margin-top: 25px;
+        padding: 12px 28px;
+        background: var(--primary);
+        color: #000;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        box-shadow: 0 0 15px rgba(0,184,255,0.4);
+        transition: 0.3s;
+    }
+    .cta-btn:hover {
+        background: #00a4e8;
+        box-shadow: 0 0 25px rgba(0,184,255,0.6);
+        transform: translateY(-2px);
+    }
+
+    /* Section Titles */
+    .section-title {
+        text-align: center;
+        font-size: 1.9rem;
+        margin-top: 70px;
+        color: var(--primary);
+        letter-spacing: 0.5px;
+    }
+
+    /* Works */
+    .works {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 25px;
+        padding: 40px 10%;
+    }
+    .work-card {
+        background: var(--card-bg);
+        border-radius: 15px;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid rgba(255,255,255,0.05);
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        transition: 0.3s;
+    }
+    .work-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 25px rgba(0,184,255,0.3);
+    }
+    .work-card img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 12px;
+    }
+
+    /* Gallery */
+    .gallery {
+        display: flex;
+        overflow-x: auto;
+        gap: 15px;
+        padding: 30px 10%;
+        scroll-behavior: smooth;
+    }
+    .gallery img {
+        height: 230px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,184,255,0.2);
+        transition: 0.3s;
+    }
+    .gallery img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(0,184,255,0.4);
+    }
+
+    footer {
+        text-align: center;
+        padding: 25px;
+        margin-top: 40px;
+        font-size: 0.9rem;
+        opacity: 0.7;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        background: rgba(0,0,0,0.2);
+        backdrop-filter: blur(6px);
+    }
+
+    @media (max-width: 768px) {
+        .hero {
+            text-align: center;
+            flex-direction: column;
+        }
+        .hero img {
+            margin: 0 0 35px 0;
+        }
+    }
+    
+    
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>TYCOON.01</h1>
+    <p>IT & Tech Influencer • Cybersecurity • Programming • Digital Skills</p>
+</header>
+
+<section class="hero">
+    <img src="/IMG-20251024-WA0007.jpg" alt="Tycoon.01 profile photo">
+    <div class="hero-text">
+        <h2>Empowering the Digital Future</h2>
+        <p>I create tech education content and guide people to grow in IT, cybersecurity, coding, and innovation.  
+        I collaborate with brands, train learners, and build solutions that help communities adopt technology.</p>
+        <a href="https://www.instagram.com/_tycoon.01?igsh=MXF2NHllYXhubjFzYw==" class="cta-btn">🎉Instagram🎊</a>
+    
+    
+    
+    </div>
+</section>
+
+<h2 class="section-title">Featured Works & Projects</h2>
+<section class="works">
+    <div class="work-card">
+        <img src="/IMG-20251024-WA0006.jpg" alt="Cybersecurity Workshop">
+        <p>Cybersecurity Community Workshop</p>
+    </div>
+    <div class="work-card">
+        <img src="/IMG-20251024-WA0005.jpg" alt="Programming Training">
+        <p>Programming Training Bootcamp</p>
+    </div>
+    <div class="work-card">
+        <img src="/IMG-20251024-WA0003.jpg" alt="Tech Brand Collaboration">
+        <p>Tech Brand Collaboration</p>
+    </div>
+</section>
+
+<h2 class="section-title">Photos & Behind the Scenes</h2>
+<section class="gallery">
+    <img src="/IMG-20251024-WA0002(1).jpg" alt="Influencer event moment">
+    <img src="/IMG-20251024-WA0009.jpg" alt="Tech talk session">
+    <img src="/IMG-20251024-WA0004.jpg" alt="Laptop coding session">
+    <img src="/IMG-20251025-WA0000.jpg" alt="Brand photoshoot">
+</section>
+
+<footer>
+    © 2025 Tycoon.01 — All Rights Reserved
+</footer>
+
+</body>
+</html>
